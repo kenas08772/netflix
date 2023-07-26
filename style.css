@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: myfont;
+    src: url('netflix sans\NetflixSansBlack.ttf');
+}
+.custom-banner {
+    background: url("images/new banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.main-banner-container {
+    height: 100vh;
+    width: 100%;
+    background: url("images/new banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.home-title-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    .main-banner-container {
+        height: 80vh;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .home-title-container h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .home-title-container .para{
+        font-size: 18px;
+    }
+    .question h3{
+        font-size: 10px;
+        
+    }
+    .answer p{
+        font-size: 18px;
+    }
+}
+
+
+.question h3{
+    font-size: 24px;
+    
+}
+.answer .ans-para{
+    font-size: 24px;
+}
+
+.search-box {
+    width: 400px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.444);
+    outline: none;
+    border: 1px solid white;
+}
+.zig-zag-custom {
+    height: 400px;
+    width: 90%;
+}
+.zig-zag-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+
+    border-bottom: 10px solid grey;
+}
+.home-title-container h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: myfont;
+}
+.home-title-custom .para{
+    color: black;
+}
+.container img{
+    width: 150px;
+    height: 50px;
+}
+
+.zig-zag-title{
+font-size: 48px;
+font-weight: 900;
+}
+.zig-zag-content{
+    font-size: 24px;
+}
+@media screen and (max-width:600px){
+  .zig-zag-title{
+font-size: 32px;
+font-weight: 900;
+} 
+.zig-zag-content{
+    font-size: 18px;
+}
+}
+
+
+section{
+    width: 90%;
+    height:auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.faq{
+    max-width: 1114px;
+     padding: 15px 15px;
+    margin-top: 10px;
+    padding-bottom: 1rem;
+  
+    background-color: #2d2d2d;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+.faq .active .answer{
+    max-height: 300px;
+}
+footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+}
+footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+footer li a{
+    color: #777;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer li{
+    list-style: none;
+}
+footer ul li a:hover{
+    color: #777;
+    text-decoration: underline;
+}
+.search-footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.lang-btn{
+    width: 100px;
+    height:20;
+    color: white;
+    background-color: transparent;
+    border: 1px double white;
+}
+.para{
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+
+@media screen and (max-width:325px) {
+    .home-title-container h1{
+        font-size: 22px;
+    }
+    .home-title-container .para{
+        font-size: 15px;
+    }
+    .home-title-container{
+        gap: 4px;
+    }
+    .home-title-container .search-box{
+        width: 300px;
+        height: 10px;
+    }
+    .home-title-container .button{
+        
+        padding: 0px;
+    }
+    .container img{
+        width: 80px;
+        height: 30px;
+    }
+    .container button{
+        padding: 10px 10px;
+    }
+    .zig-zag-container h1{
+        font-size: 22px;
+
+    }
+    .zig-zag-container  h3{
+        font-size: 18px;
+    }
+    .zig-zag-container{
+        height: 400px;
+    }
+    .faq-title{
+        font-size: 20px;
+    }
+    .question h3{
+        font-size: 18px;
+    }
+    .answer p{
+        font-size: 13px;
+    }
+    .search-box{
+        width: 300px;
+        height: 30px;
+
+    }
+    .button{
+        width: 200px;
+        height: 30px;
+    }
+    .container .btn{
+        height: 30px;
+        padding-top: 0px;
+    }
+}
+
+ 
+@media screen and (max-width:378px) and (min-width:325px){
+    .home-title-container h1{
+        font-size: 30px;
+    }
+    .home-title-container .para{
+        font-size: 18px;
+    }
+    .home-title-container{
+        gap: 2px;
+    }
+    .home-title-container .search-box{
+        width: 300px;
+        height: 10px;
+    }
+    .home-title-container .button{
+        
+        padding: 0px;
+    }
+    .container img{
+        width: 80px;
+        height: 30px;
+    }
+    .container button{
+        padding: 10px 10px;
+    }
+    .zig-zag-container h1{
+        font-size: 22px;
+
+    }
+    .zig-zag-container  h3{
+        font-size: 18px;
+    }
+    .zig-zag-container{
+        height: 400px;
+    }
+    .faq-title{
+        font-size: 20px;
+    }
+    .question h3{
+        font-size: 18px;
+    }
+    .answer p{
+        font-size: 13px;
+    }
+    .search-box{
+        width: 300px;
+        height: 30px;
+
+    }
+    .button{
+        width: 200px;
+        height: 30px;
+    }
+    .container .btn{
+        height: 30px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .home-title-container h1{
+        font-size: 30px;
+    }
+    .home-title-container{
+        gap: 3px;
+    }
+    .home-title-container .container .search-box{
+        width: 300px;
+        height: 40px;
+    }
+    .home-title-container .container .btn{
+        height: 25px;
+        padding-top: 0px;
+    }
+    .zig-zag-container {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:770px) and (min-width:430px){
+    .home-title-container h1{
+        font-size: 35px;
+    }
+    .zig-zag-container h1{
+        font-size: 38px;
+    }
+    .zig-zag-container{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
